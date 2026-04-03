@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb0cc",
+                    "surface-container-low": "#f2f4f2",
+                    "surface-container": "#eceeec",
+                    "on-tertiary-container": "#ffaac8",
+                    "primary-fixed": "#bcf0ae",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#60233e",
+                    "on-primary-fixed": "#002201",
+                    "on-tertiary-fixed": "#3b0520",
+                    "secondary": "#465f88",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#001b3d",
+                    "on-primary-container": "#9dd090",
+                    "surface-container-high": "#e6e9e7",
+                    "secondary-fixed-dim": "#aec7f7",
+                    "inverse-primary": "#a1d494",
+                    "surface-dim": "#d8dad9",
+                    "inverse-on-surface": "#eff1ef",
+                    "primary": "#154212",
+                    "background": "#f8faf8",
+                    "tertiary-fixed": "#ffd9e4",
+                    "secondary-container": "#b6d0ff",
+                    "outline-variant": "#c2c9bb",
+                    "on-secondary-fixed-variant": "#2e476f",
+                    "on-surface": "#191c1b",
+                    "surface": "#f8faf8",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#3b6934",
+                    "on-primary-fixed-variant": "#23501e",
+                    "surface-bright": "#f8faf8",
+                    "outline": "#72796e",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#3f5881",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#2d5a27",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e1e3e1",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1b",
+                    "on-surface-variant": "#42493e",
+                    "tertiary-container": "#7c3a55",
+                    "on-tertiary-fixed-variant": "#71314c",
+                    "inverse-surface": "#2e3130",
+                    "secondary-fixed": "#d6e3ff",
+                    "surface-variant": "#e1e3e1",
+                    "primary-fixed-dim": "#a1d494"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="w-full top-0 sticky z-50 bg-[#f8faf8] dark:bg-slate-900 transition-colors duration-300">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<span class="text-2xl font-headline font-bold tracking-tighter text-[#191c1b] dark:text-white">Agrarian Talent</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline tracking-tight font-bold text-[#465f88] dark:text-slate-400 hover:text-[#2d5a27] transition-opacity cursor-pointer active:scale-95" href="#">Open Roles</a>
+<a class="font-headline tracking-tight font-bold text-[#465f88] dark:text-slate-400 hover:text-[#2d5a27] transition-opacity cursor-pointer active:scale-95" href="#">The Modern Agrarian</a>
+<a class="font-headline tracking-tight font-bold text-[#465f88] dark:text-slate-400 hover:text-[#2d5a27] transition-opacity cursor-pointer active:scale-95" href="#">Our Process</a>
+<a class="font-headline tracking-tight font-bold text-[#465f88] dark:text-slate-400 hover:text-[#2d5a27] transition-opacity cursor-pointer active:scale-95" href="#">Testimonials</a>
+</div>
+<button class="bg-primary-container text-on-primary-fixed px-6 py-2.5 rounded-lg font-headline font-bold tracking-tight hover:opacity-80 transition-all cursor-pointer active:scale-95">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main>
+<!-- Editorial Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Modern high-tech greenhouse with specialized irrigation systems and bright natural light filtering through glass panels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPpXQRrvWH1FsXLaqG6Po0SmxgzlGYNir9O02B5Gaq9_GsOpx1xTLxJ2QJZZXRN_OlcOmDkzeVkWPtMZV20OEvhtVrBdpImmKO1zffWzvgg8jf7uvXOqpfuM38GjjP3iQNulhgA6e5KbjDnkFzWJ7qL7x-zW-YYVfov57LtC7walVIDPEaH7UiZSkXe6z-zzlh_4q64iY-SMJuujo3Ig7wbSZ1gz8DiA6XK8P7RaqETnyjIVIGp44kAQmNO-eoSdEpsUQaOy8Bo2aw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid grid-cols-12 gap-8">
+<div class="col-span-12 lg:col-span-7 flex flex-col justify-center">
+<span class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-label font-semibold tracking-widest uppercase mb-6 w-fit">
+                        Oportunidad de Carrera
+                    </span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface mb-8 leading-[0.9]">
+                        Se Busca <br/>
+<span class="text-primary-container">Técnico de Campo</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl mb-12 font-light leading-relaxed">
+                        Buscamos profesionales apasionados por la tierra y la tecnología para liderar la transformación agrícola en la región.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-lg font-headline font-bold tracking-tight shadow-lg shadow-primary/10 hover:opacity-90 transition-all active:scale-95">
+                            Postularse ahora
+                        </button>
+<button class="px-8 py-4 bg-surface-container-lowest text-primary rounded-lg font-headline font-bold tracking-tight border border-outline-variant/30 hover:bg-surface-container transition-all active:scale-95">
+                            Ver detalles del rol
+                        </button>
+</div>
+</div>
+</div>
+<!-- Asymmetric Floating Info -->
+<div class="absolute bottom-12 right-8 hidden lg:block w-72">
+<div class="glass-card p-6 rounded-xl border border-white/20">
+<span class="material-symbols-outlined text-primary-container text-3xl mb-4">agriculture</span>
+<h4 class="font-headline font-bold text-on-surface mb-2">Impacto Real</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Únete a un equipo que está redefiniendo los límites de la producción sostenible.</p>
+</div>
+</div>
+</section>
+<!-- Requirements Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="mb-16">
+<span class="text-secondary font-label text-sm uppercase tracking-widest block mb-2">Perfil Requerido</span>
+<h2 class="text-4xl font-headline font-bold text-on-surface tracking-tight">Requisitos del Puesto</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Requirement 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:translate-y-[-4px]">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary-container text-3xl">school</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Ingeniero Agrónomo</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Formación técnica superior con especialización en gestión de cultivos y sostenibilidad ambiental.
+                        </p>
+</div>
+<!-- Requirement 2 -->
+<div class="bg-primary text-on-primary p-10 rounded-xl transition-all hover:translate-y-[-4px]">
+<div class="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-white text-3xl">verified_user</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Responsable</h3>
+<p class="text-on-primary/80 leading-relaxed">
+                            Buscamos una persona autónoma, con alta capacidad de toma de decisiones en campo y liderazgo de equipos.
+                        </p>
+</div>
+<!-- Requirement 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:translate-y-[-4px]">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary-container text-3xl">directions_car</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-4">Vehículo propio</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Indispensable movilidad propia para traslados frecuentes entre las diferentes unidades de producción.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Image & Text Editorial Section -->
+<section class="py-24 bg-surface">
+<div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A professional field technician holding a digital tablet examining crops in a vast sunlit field at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB00MERZwMyOUUB42GYU37uKDzAohue2fQGThxMT3NQ4L5Kmv3ZIJI3YGRC5f3T3zGew_4u4dv3C4djKkT622Jf9Mzteeo_KQHMAgb-NSiLO7Sg40tXV2cImYAEVpEHAXNbAToff4aJ5L2yaSFTcdGpc7wPC-hgkpSyTmR75_6Lot7F6dNVDRgV_4brHwk1qRSvhJCE7vMILDTgHvPDUB_fDaXdt_KXZyhSH2ztnjNvOYwlDv2w8SiWnWKSr-HuOTyzwE-7hEhS-DIk"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-container rounded-xl flex items-center justify-center p-6 text-on-primary hidden md:flex">
+<p class="text-sm font-label uppercase tracking-widest text-center">Tecnología de Vanguardia</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tight text-on-surface mb-8 leading-tight">
+                        Cultivando el futuro de la eficiencia agrícola
+                    </h2>
+<p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
+                        Nuestra metodología combina la sabiduría tradicional de la tierra con las últimas innovaciones en análisis de datos y monitoreo satelital. Como Técnico de Campo, serás el puente vital entre la estrategia y la ejecución táctica.
+                    </p>
+<ul class="space-y-6 mb-12">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface">Monitoreo Avanzado</h4>
+<p class="text-sm text-on-surface-variant">Uso de drones y sensores de suelo de última generación.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface">Crecimiento Profesional</h4>
+<p class="text-sm text-on-surface-variant">Capacitación continua en nuevas tecnologías agrarias.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface-container-highest">
+<div class="container mx-auto px-8">
+<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row shadow-xl shadow-on-surface/5">
+<div class="md:w-1/2 p-12 bg-primary text-on-primary">
+<h3 class="text-3xl font-headline font-bold mb-6">¿Interesado? Contáctanos</h3>
+<p class="text-on-primary/70 mb-10">Estamos listos para conocer tu talento. Escríbenos o visítanos.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-lg font-light">talento@agrariantalent.com</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">call</span>
+<span class="text-lg font-light">+34 900 000 000</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-lg font-light">Calle de la Tierra, 45. Madrid</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 p-12">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-label font-bold text-on-surface-variant mb-2">Nombre completo</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-label font-bold text-on-surface-variant mb-2">Correo electrónico</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-label font-bold text-on-surface-variant mb-2">Mensaje</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg p-3 focus:ring-2 focus:ring-primary outline-none transition-all" rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary-container text-on-primary font-headline font-bold rounded-lg hover:opacity-90 transition-all active:scale-95">
+                                Enviar Mensaje
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#191c1b] dark:bg-black w-full border-t border-[#c2c9bb]/15">
+<div class="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="text-lg font-headline font-bold text-white">Agrarian Talent</span>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label text-sm uppercase tracking-widest text-[#c2c9bb] hover:text-white transition-colors" href="#">Contact Us</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#c2c9bb] hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#c2c9bb] hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#c2c9bb] hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#c2c9bb] hover:text-white transition-colors" href="#">Instagram</a>
+</div>
+<p class="font-label text-xs uppercase tracking-widest text-[#c2c9bb]">
+                © 2024 The Modern Agrarian. Rooted in Excellence.
+            </p>
+</div>
+</footer>
+</body></html>
